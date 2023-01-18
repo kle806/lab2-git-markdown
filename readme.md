@@ -39,23 +39,40 @@ tasks are comparable.  Here are the tasks:
 5. check **git status** (see [course book
    4.4.1](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-situational-awareness)).
    Show below, in _block quote_, what does it print.
+   ```
+   Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../books.Rmd
+
+   ```
    
    Explain, in plain text, what does it mean.
+   
+   This means that the books file has not yet been added to the repository and any changes right now are not saved yet.
    
 6. **add** the new file to the repository (see [course book
   4.4.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-adding)).
   Show your command (as a
   code block).
+  
+  {git add books.Rmd}
 
 7. Was your add successful?  Check status again!  Explain what do you
    see.
+   
+   I see that it says my branch is up to date with the origin/main so it is saved and ready to be committed. It lists the files that are ready to be committed which is books.Rmd.
    
 8. Now **commit** your changes (see [course book
    4.4.4](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-committing)). 
    Put your command underneath in a code block.
    
+   {git commit -am "Added books list"}
+   
 9. Was your commit successful?  How can you check it?  Show your
    command(s) as a code block and explain what you see!
+   
+   git status
+   This says that the branch is ahead of the main since we made the change and committed it which shows that we did it successfully.
    
 10. Now **push** your changes to Github (see [course book 4.4.5](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-working-pushing)).  You may
    need to create access token before you are able to push.
@@ -92,7 +109,7 @@ Untracked files
    
 6. what is the relative path of your image if you start walking there
    from the location of your books.md file?
-   {cd ../images/Screenshot_20230113.png}
+   {cd images/Screenshot_20230113_023128.png}
    
    You can check if the path is correct with something like `ls
    path-to/file`, e.g.
@@ -103,6 +120,7 @@ Untracked files
    or directory_ if the path is wrong.
    
 7. now add the image to your books.md file using the relative path.
+![Image](images/Screenshot_20230113_023128.png)
 
 8. check git status and commit
 
