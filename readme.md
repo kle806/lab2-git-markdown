@@ -23,6 +23,8 @@ tasks are comparable.  Here are the tasks:
    book 4.3.3](https://faculty.washington.edu/otoomet/info201-book/git-basics.html#git-basics-getting-creating)).
    Write the command you
    used underneath in a code block.
+  
+   {git clone https://github.com/kle806/lab2-git-markdown.git}
    
 3. **add a new file** "books.md" to the repo.  You can use RStudio
    (file -> new file -> markdown file), or any other tool you find
@@ -75,14 +77,22 @@ This task is about adding images and using relative path.
    
 3. check git status.  What do you see?
 
+Untracked files
+  books.Rmd
+  images/
+
 4. add image to the repo.  Show the command you are using in a code
    block.
    
+   {git add Screenshot_20230113.png)023128}
+   
 5. check status again.  Does it indicate that the image has been
    added?
+   Yes, the images is no longer untracked
    
 6. what is the relative path of your image if you start walking there
    from the location of your books.md file?
+   {cd ../images/Screenshot_20230113.png}
    
    You can check if the path is correct with something like `ls
    path-to/file`, e.g.
